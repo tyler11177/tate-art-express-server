@@ -1,7 +1,9 @@
 Overview
+
 This is a simple nodejs and express application made to create 3 tables (art, users, & comments) into Postgres Database, load the Tate Modern Art data set into the art, and an express server to implement API endpoints 
 
 Usage
+
 This guide will assume you have a working postgres database, npm, nvm, and node installed on your machine and are familiar with those tools
 
 1. Git Pull or otherwise download this repository to your machine
