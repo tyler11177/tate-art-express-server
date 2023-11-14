@@ -1,0 +1,8 @@
+{
+    "PG_CONFIG": {
+        "database": "art",
+        "port" : 5432
+    },
+    "FILE_PATH_TO_TATE_CSV" : "UPDATE WITH YOUR PATH",
+    "API_SERVER_PORT" : 3000
+}
