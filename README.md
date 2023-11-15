@@ -10,9 +10,12 @@ This guide will assume you have a working postgres database, npm, nvm, and node 
 2. Run “nvm use 16.20.1”
 3. Run “npm install” 
 4. Edit the config.json file
-    PG_CONFIG is passed directly to pg’s client constructor.  Customize this object to connect to your postgres server
+    PG_CONFIG is passed directly to pg’s client constructor.  Customize this object to connect to your postgres server.  Learn more here: https://node-postgres.com/apis/client
+    
     FILE_PATH_TO_TATE_CSV is the absolute path to the Tate CSV file on your machine.  If this is not changed in the config.json file, the applicaiton will assume the csv is in the app root directory. Note: this data is loaded into the postgres database using a copy command so the file must be accessible to your postgres database
+    
     API_SERVER_PORT is the port you’d like the express server to run on
+
 5. Optional: run “npm run load”
     This command will connect to your postgres server based on the configuration you define in the config.json, drop any existing art, users, or comments tables, create new based on the schema defined in the app, and copy the tate csv into the art table.  You may skip this step if those tables are already defined in your database. 
 6. Run “npm run start” this will start the express server and connect to the database to implement the endpoints discussed below
